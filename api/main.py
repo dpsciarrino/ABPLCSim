@@ -6,6 +6,13 @@
 #
 # TODO: Wire up routers and middleware as each milestone is completed
 
+import logging
+
+logging.basicConfig(
+    level=logging.DEBUG,     # show everything during development
+    format="%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+)
+
 from fastapi import FastAPI
 
 app = FastAPI(
